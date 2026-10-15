@@ -1,0 +1,6 @@
+services:
+  diagnostic:
+    build: .
+    image: diagnostic-tool
+    entrypoint: ["./diagnostic.sh"]
+    command: ["help"]
