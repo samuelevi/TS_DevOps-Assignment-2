@@ -80,7 +80,6 @@ assignment-2/
 └── README.md
 ```
 
-## Notes
 
 - Requires Docker to be installed with the daemon running
 - Built on Alpine Linux 3.19 -- diagnostics run inside the container, not on the host
