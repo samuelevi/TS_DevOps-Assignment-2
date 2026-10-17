@@ -9,5 +9,8 @@ WORKDIR /app
 COPY app/ .
 RUN chmod +x diagnostic.sh health-check.sh
 
+RUN addgroup -S app && adduser -S app -G app
+USER app
+
 ENTRYPOINT ["./diagnostic.sh"]
 CMD ["help"]
