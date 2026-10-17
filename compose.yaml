@@ -2,5 +2,4 @@ services:
   diagnostic:
     build: .
     image: diagnostic-tool
-    entrypoint: ["./diagnostic.sh"]
-    command: ["help"]  # default action when no command is given
+    command: ["help"]
